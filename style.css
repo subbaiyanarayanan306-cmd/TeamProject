@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    Cormorant Garamond,
+    Georgia,
+    serif;
+}
+
+/* NAVIGATION BAR : */
+#logo {
+  font-family:
+    Cormorant Garamond,
+    Georgia,
+    serif;
+}
+
+#navbar {
+  padding: 10px;
+}
+
+#logo-text1 {
+  color: #492c1f;
+}
+
+#logo-text2 {
+  color: #b05e42;
+}
+
+#cart {
+  padding: 10px 25px;
+  margin: 5px 20px;
+}
+
+#cart-value {
+  width: 20px;
+  text-align: center;
+}
+
+/* TRANSITION HOVER : */
+ul li a {
+  position: relative;
+  text-decoration: none;
+}
+
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  transition: 0.4s;
+  background-color: #b05e42;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+ul li a.active::after {
+  width: 100%;
+}
+
+/* MOBILE NAV BAR : */
+#mobilenav {
+  width: 50%;
+  height: 100vh;
+  background-color: #492c1f;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: -50%;
+  /* right: 900px; */
+  transition: 1s;
+  z-index: 20;
+}
+
+/* CLOSE BUTTON : */
+#close {
+  cursor: pointer;
+  text-align: right;
+}
+
+#close i:hover {
+  color: white;
+}
+
+/* BANNER SLIDE CONTENT BELOW : */
+
+.slide {
+  width: 95%;
+  height: 600px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* SLIDER IMAGE'S : */
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* OVERLAY CONTENT : */
+
+.slide-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* SLIDER CONTENT : */
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.slide-title {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.slide-desc {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.slide-button:hover{
+  background-color: #b05e42;
+}
+
+.slide-button {
+  border: none;
+  padding: 12px 30px;
+  background-color: #492c1f;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.left-btn,
+.right-btn {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  transition: 5s;
+
+}
+
+.left-btn{
+  left: 20px;
+}
+
+.right-btn{
+  right: 20px;
+}
