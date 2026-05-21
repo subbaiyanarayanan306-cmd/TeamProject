@@ -345,7 +345,7 @@ ul li a.active::after {
   }
 
   .journey h1{
-    font-size: 60px;
+    font-size: 50px;
     color: black;
 
   }
@@ -402,6 +402,7 @@ ul li a.active::after {
   transition: 1s;
   cursor: pointer;
   box-shadow: 0px 20px 20px rgba(0, 0, 0,0.5);
+  
 }
 
 /* CARD TITLE */
@@ -470,4 +471,106 @@ ul li a.active::after {
   .journey h1{
     font-size: 40px;
   }
+}
+
+/* PEOPLE SECTION : */
+.people-section{
+  width: 100%;
+  /* min-height: 100vh; */
+  background-color:#FAF6F1;
+  padding: 100px 8%;
+  text-align: center;
+  /* margin-top: 30px; */
+}
+
+.poeple-section__title p{
+     text-align: left !important;
+     color:#B05E42;
+     font-size: 17px;
+     margin-bottom: 5px;
+}
+
+.poeple-section__title h1{
+  font-size: 45px;
+  text-align: left !important;
+  margin-bottom: 5px;
+}
+
+.people-section__subtitle p{
+  /* font-size: 20px; */
+  color: #B06F6F;
+  text-align: left !important;
+}
+
+.card1{
+    background-color: white;
+    width: 280px;
+    height: 350px;
+    color: black;
+    padding: 30px;
+    border-radius: 30px;
+    /* margin: 30px; */
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    line-height: 1.9;
+     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card1:hover{
+    background-color:#492C1F;
+    transform: translateY(-15px);
+    transition: 1s;
+    box-shadow: 0px 10px 20px rgba(73, 44, 31, 0.8);
+}
+
+.card1:hover p,.card1:hover h2,.card1:hover h3{
+     color: white;
+}
+
+.card1:hover{
+  background-color: #492C1F;
+}
+
+.card1 p{
+    margin-top: 15px;
+}
+
+
+.card1 h2{
+  color:#B05E42;
+  font-weight: 600;
+}
+
+.card1 h3{
+   color: #7a6a62;
+   margin-top: 10px;
+  
+}
+
+.icon1{
+  width: 80px;
+  height: 80px;
+  background-color: #B05E42;
+  border-radius: 20%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icon1 i{
+   font-size: 50px;
+  
+}
+
+.card-whole__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    /* gap:20px; */
+    gap:10px;
 }
