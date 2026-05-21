@@ -339,7 +339,7 @@ ul li a.active::after {
   }
 
   .journey p{
-     font-size: 25px;
+     font-size: 17px;
      color: #D4836A;
      text-align: left !important;
   }
@@ -397,6 +397,13 @@ ul li a.active::after {
   position: relative;
 }
 
+#card:hover{
+  transform: translateY(-15px);
+  transition: 1s;
+  cursor: pointer;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0,0.5);
+}
+
 /* CARD TITLE */
 
 #card h2 {
@@ -437,6 +444,7 @@ ul li a.active::after {
 .timeline-item__right::after {
   left: -10px;
 }
+
 
 /* MOBILE RESPONSIVE */
 
