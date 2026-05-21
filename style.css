@@ -184,7 +184,7 @@ ul li a.active::after {
 
 #feature {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #faf6f1;
   padding: 120px 8%;
   text-align: center;
@@ -316,3 +316,150 @@ ul li a.active::after {
       font-size: 15px;
      }
   }
+
+  /* OUR JOURNEY SECTION : */
+  .journey{
+     width: 100%;
+     min-height: 100vh;
+     background-color:#FAF6F1;
+     position: relative;
+     padding: 100px 12%;
+     text-align: center;
+  }
+
+  .journey::before{
+     content: "";
+     position: absolute;
+     width: 3px;
+     height: 70%;
+     background-color: #d7b7a7;
+     left: 50%;
+     top: 220px;
+     transform: translateX(-50%);
+  }
+
+  .journey p{
+     font-size: 25px;
+     color: #D4836A;
+     text-align: left !important;
+  }
+
+  .journey h1{
+    font-size: 60px;
+    color: black;
+
+  }
+
+ /* TIMELINE ITEMS */
+
+.timeline-item__left,
+.timeline-item__right {
+  width: 50%;
+  position: relative;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+/* LEFT CARD */
+
+.timeline-item__left {
+  left: 0;
+  text-align: right;
+}
+
+/* RIGHT CARD */
+
+.timeline-item__right {
+  left: 50%;
+  text-align: left;
+}
+
+/* YEAR */
+
+.timeline-item__left span,
+.timeline-item__right span {
+  background-color: #B05E42;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* CARD DESIGN */
+
+#card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,10px,0.1);
+  position: relative;
+}
+
+/* CARD TITLE */
+
+#card h2 {
+  font-size: 30px;
+  color: #492C1F;
+  margin-bottom: 15px;
+}
+
+/* CARD PARAGRAPH */
+
+#card p {
+  font-size: 17px;
+  color: #7a6a62;
+  line-height: 1.7;
+}
+
+/* SMALL CIRCLE */
+
+.timeline-item__left::after,
+.timeline-item__right::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #B05E42;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+}
+
+/* LEFT CIRCLE */
+
+.timeline-item__left::after {
+  right: -10px;
+}
+
+/* RIGHT CIRCLE */
+
+.timeline-item__right::after {
+  left: -10px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width:768px){
+
+  .journey::before{
+    left: 20px;
+  }
+
+  .timeline-item__left,
+  .timeline-item__right{
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding-left: 60px;
+  }
+
+  .timeline-item__left::after,
+  .timeline-item__right::after{
+    left: 10px;
+  }
+
+  .journey h1{
+    font-size: 40px;
+  }
+}
