@@ -169,9 +169,6 @@
   }
 }
 @layer utilities {
-  .z-10 {
-    z-index: 10;
-  }
   .flex {
     display: flex;
   }
