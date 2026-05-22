@@ -80,7 +80,7 @@ ul li a.active::after {
   left: -50%;
   /* right: 900px; */
   transition: 1s;
-  z-index: 20;
+  z-index:999;
 }
 
 /* CLOSE BUTTON : */
