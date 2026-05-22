@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About-Us</title>
+    <!-- FONTAWESOM LINK HERE : -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GOOGLE FONT'S : -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- NORMAL CSS LINK TAG -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- TAILWIND CSS FOR TO LINK TAG : -->
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION BAR : -->
+    <nav id="navbar" class="bg-[#FAF6F1] flex justify-between items-center p-5">
+      <h1 id="logo" class="font-bold text-2xl">
+        <a href="#"
+          ><span id="logo-text1">Sweet</span
+          ><span id="logo-text2">Bakes</span></a
+        >
+      </h1>
+      <!-- MENU SMALL SCREEN ICON'S USING FROM HERO ICON'S -->
+      <svg
+        id="nav-menu-toggle"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6 md:hidden cursor-pointer hover:text-[#492C1F]"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+      <!-- LINK SHOULD BE BELOW : -->
+      <ul class="flex gap-7 hidden md:flex">
+        <li>
+          <a class="hover:text-[#B05E42] text-[#492C1F]" href="#">HOME</a>
+        </li>
+        <li>
+          <a class="hover:text-[#B05E42] text-[#492C1F]" href="#">PRODUCTS</a>
+        </li>
+        <li>
+          <a class="hover:text-[#B05E42] text-[#492C1F]" href="#">ABOUT-US</a>
+        </li>
+        <li>
+          <a class="hover:text-[#B05E42] text-[#492C1F]" href="#">CONTACT</a>
+        </li>
+      </ul>
+      <!-- CART BUTTON ADD HERE : -->
+      <div
+        class="flex justify-center items-center gap-2 bg-[#492C1F] hover:bg-[#B05E42] cursor-pointer text-white p-3 rounded-2xl"
+        id="cart"
+      >
+        <i class="fa-solid fa-cart-arrow-down"></i>
+        <p>Cart</p>
+        <h1 id="cart-value" class="bg-[#B05E42] rounded-3xl">0</h1>
+      </div>
+    </nav>
+
+    <!-- NAVBAR FOR MOBILE VIEW : -->
+    <!-- LINK SHOULD BE BELOW : -->
+    <section id="mobilenav" class="md:hidden">
+      <div>
+        <h1 id="logo" class="font-bold text-2xl">
+          <a href="#"
+            ><span id="logo-text1" style="color: white">Sweet</span
+            ><span id="logo-text2">Bakes</span></a
+          >
+        </h1>
+        <div id="close">
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <ul class="flex flex-col gap-9">
+          <li>
+            <a class="hover:text-[#B05E42] text-white" href="#">HOME</a>
+          </li>
+          <li>
+            <a class="hover:text-[#B05E42] text-white" href="#">PRODUCTS</a>
+          </li>
+          <li>
+            <a class="hover:text-[#B05E42] text-white" href="#">ABOUT-US</a>
+          </li>
+          <li>
+            <a class="hover:text-[#B05E42] text-white" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- BANNER SECTION USING SLIDE TO DO :SLIDE -->
+
+    <!-- SLIDE PART -->
+    <div class="slide">
+      <!-- OVERLAY  -->
+      <div class="slide-overlay"></div>
+
+      <!-- LEFT BUTTON : -->
+      <div class="left-btn">
+        <i class="fa-solid fa-less-than"></i>
+      </div>
+      <!-- IMG -->
+      <img class="slide-image" src="images/Banner-image-1.jpg" alt="" />
+      <img class="slide-image" src="images/Banner-image-2.jpg" alt="" />
+      <img class="slide-image" src="images/Banner-image-3.jpg" alt="" />
+      <!-- IMAGE COONTENT -->
+      <div class="slide-content">
+        <h1 class="slide-title">About Us</h1>
+        <p class="slide-desc">Fresh and Delicious Cake</p>
+        <button class="slide-button">Explore Our Menu</button>
+      </div>
+
+      <!-- SLIDE RIGHT SIDE BUTTON : -->
+      <div class="right-btn">
+        <i class="fa-solid fa-greater-than"></i>
+      </div>
+    </div>
+
+    <!-- SLIDE END : -->
+
+    <!-- FEAURE SECTION : -->
+    <section id="feature">
+      <div id="feature-title">
+        <p id="small-title">------Our Value's</p>
+        <h1>What We Stand For</h1>
+      </div>
+      <div id="sub-title">
+        <p>Every decision at SweetBakes comes back to these principles.</p>
+      </div>
+
+      <!-- CARD SECTION : -->
+
+      <div id="card-container">
+        <!-- 1st card : -->
+        <div class="card">
+          <div id="icon">
+            <h2>🌿</h2>
+          </div>
+          <h3>Natural Ingredients</h3>
+          <p>
+            No artificial colours, flavours or preservatives. Real butter, real
+            cream, real fruit — always.
+          </p>
+        </div>
+
+        <!-- SECOND ONE : -->
+
+        <div class="card">
+          <div id="icon">
+            <h2>🕐</h2>
+          </div>
+          <h3>Always Fresh</h3>
+          <p>
+            We bake small batches every morning. Nothing sits overnight. If it's
+            not fresh, it doesn't go out.
+          </p>
+        </div>
+
+        <!-- THIRED ONE : -->
+
+        <div class="card">
+          <div id="icon">
+            <h2>👩‍🍳</h2>
+          </div>
+          <h3>Master Graft</h3>
+          <p>
+            No artificial colours, flavours or preservatives. Real butter, real
+            cream, real fruit — always.
+          </p>
+        </div>
+
+        <div class="card">
+          <div id="icon">
+            <h2>🌎</h2>
+          </div>
+          <h3>Community First</h3>
+          <p>
+            We source locally, compost waste, and donate leftover bakes to
+            neighbourhood shelters every evening.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR JOURNEY SECTION : -->
+    <section class="journey">
+      <p>----HISTORY</p>
+      <h1>Our Journey</h1>
+      <!-- 1ST CARD : -->
+      <div class="timeline-item__left">
+        <span>2014</span>
+        <div id="card">
+          <h2>The Home Kitchen</h2>
+          <p>
+            Founder Priya Menon starts baking from her Adyar home with a
+            borrowed stand mixer and her paati's recipes.
+          </p>
+        </div>
+      </div>
+
+      <!-- SECOND CARD : -->
+      <div class="timeline-item__right">
+        <span>2016</span>
+        <div id="card">
+          <h2>First Storefront</h2>
+          <p>
+            Growing word-of-mouth leads to our first 400 sqft bakery on Gandhi
+            Nagar.
+          </p>
+        </div>
+      </div>
+
+      <!-- THIRED CARD : -->
+      <div class="timeline-item__left">
+        <span>2019</span>
+        <div id="card">
+          <h2>The Big Expansion</h2>
+          <p>
+            A 2,000 sqft production kitchen opens with professional ovens and a
+            team of 8 bakers.
+          </p>
+        </div>
+      </div>
+
+      <!-- FOURTH CARD : -->
+      <div class="timeline-item__right">
+        <span>2024</span>
+        <div id="card">
+          <h2>50,000 Customers</h2>
+          <p>
+            A milestone — 50,000 families served. We celebrate by giving away
+            500 free cakes to loyal regulars.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEOPLE SECTION : -->
+
+    <section class="people-section">
+      <div class="poeple-section__title">
+        <p>--- THE PEOPLE</p>
+        <h1>Meet Our Bakers</h1>
+      </div>
+
+      <div class="people-section__subtitle">
+        <p>The talented hands behind every bite — hover to feel the 3D.</p>
+      </div>
+      <div class="card-whole__container">
+        <!-- 
+        FIRST CARD : -->
+        <div class="card1">
+          <div class="icon1">
+            <i>👩‍🍳</i>
+          </div>
+          <p>Priya Menon</p>
+          <h2>Founder & Head Baker</h2>
+          <h3>
+            Trained at Le Cordon Bleu, Singapore. Loves tropical fruit cakes &
+            sourdough.
+          </h3>
+        </div>
+
+        <!-- SECOND CARD : -->
+
+        <div class="card1">
+          <div class="icon1">
+            <i>👨‍🍳</i>
+          </div>
+          <p>Arjun Nair</p>
+          <h2>PASTRY CHEF</h2>
+          <h3>
+            Specialises in French laminated pastries and sugar work. 8 years of
+            experience.
+          </h3>
+        </div>
+
+        <!-- THIRED CARD : -->
+
+        <div class="card1">
+          <div class="icon1">
+            <i>👩‍🍳</i>
+          </div>
+          <p>Divya Rao</p>
+          <h2>CAKE DESIGNER</h2>
+          <h3>
+            Makes edible art. Floral cakes featured in Bridal Asia magazine.
+          </h3>
+        </div>
+
+        <!-- FOURTH CARD : -->
+
+        <div class="card1">
+          <div class="icon1">
+            <i>👨‍🍳</i>
+          </div>
+          <p>Karthik S</p>
+          <h2>VREAD ARTISAN</h2>
+          <h3>
+            Our sourdough guru. Maintains a 7-year-old starter he calls "Paati".
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CREATION HERE : -->
+
+    <section class="footer-creation">
+      <div class="footer-container">
+        <!-- LEFT SIDE FIRST DIV : -->
+        <div class="footer-logo__content">
+          <h1 id="logo" class="font-bold text-2xl">
+            <a href="#"
+              ><span id="logo-text1" style="color: white">Sweet</span
+              ><span id="logo-text2">Bakes</span></a
+            >
+          </h1>
+          <p>
+            Handcrafted with love in Chennai since<br/> 2014. Every bite tells a
+            story of tradition,<br/> craft and pure ingredients.
+          </p>
+        </div>
+
+        <!-- NAVICATION : -->
+
+        <div class="navigate">
+          <h1>NAVIGATE</h1>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- POPULAR SECTION : -->
+        <div class="popular">
+          <h1>POPULAR</h1>
+          <ul>
+            <li><a href="">Birthday Cakes</a></li>
+            <li><a href="">Croissants</a></li>
+            <li><a href="">Cupcakes</a></li>
+            <li><a href="">Sourdough</a></li>
+          </ul>
+        </div>
+
+        <!-- WEBSITE CREATION ; -->
+
+        <div class="team">
+          <h1>WEBSITE-CREATION(TEAM-GitHub(ID))</h1>
+          <ul>
+            <li><a target="_blank" href="https://github.com/devadharshini062005-ux">Home : devadharshini062005-ux</a></li>
+            <li><a target="_blank" href="https://github.com/subbaiyanarayanan306-cmd/TeamProject">AboutUs : subbaiyanarayanan306-cmd</a></li>
+             <li><a target="_blank" href="https://github.com/chavithran">Product : chavithran</a></li>
+            <li><a target="_blank" href="https://github.com/mohanprasad0512">ContactUs : Mohan Prasad S</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTACT : -->
+
+        <div class="contact">
+          <h1>CONTACT</h1>
+          <p>
+            14 Gandhi Nagar, Adyar +91 98400 12345 hello@sweetbakes.in Mon–Sat:
+            7 AM – 8 PM
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
