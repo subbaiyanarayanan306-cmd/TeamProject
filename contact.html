@@ -354,6 +354,83 @@
    color: white;
    cursor: pointer;
 }
+#navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid chocolate;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-color: #FAF6F1;
+  backdrop-filter: blur(20px);
+}
+
+#navbar ul {
+  display: flex;
+  gap: 2.5em;
+  list-style: none;
+  height: fit-content;
+  margin: 0;
+  align-items: center;
+}
+
+#navbar a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(84, 38, 4);
+}
+
+#menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #492c1f;
+}
+/* MOBILE SIDE NAV */
+
+#mobile-nav{
+  width:250px;
+  height:100vh;
+  background-color:#492c1f;
+
+  position:fixed;
+  top:0;
+  left:-250px;
+
+  padding:30px;
+  transition:0.5s;
+  z-index:100;
+}
+
+#mobile-nav ul{
+  list-style:none;
+
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+
+  margin-top:50px;
+}
+
+#mobile-nav a{
+  color:white;
+  text-decoration:none;
+  font-size:20px;
+}
+
+#close-btn{
+  color:white;
+  font-size:30px;
+  cursor:pointer;
+  text-align:right;
+}
+
 
     /* RESPONSIVE */
 
@@ -406,11 +483,39 @@
 
     <div class="contact-wrapper">
 
+       <!--nav bar-->
+    <nav id="navbar">
+      <h1><span id="logo-text1" style="color: rgb(84, 38, 4)">Sweet</span>
+        <span id="logo-text2" style="color: chocolate">Bakes</span>
+      </h1>
+      <ul id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div id="menu">
+  ☰
+</div>
+    </nav>
+    <div id="mobile-nav">
+
+  <div id="close-btn">✕</div>
+
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Product</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+</div>
+
       <!-- LEFT SIDE -->
 
       <div class="contact-info">
 
-        <span class="badge">Velvet Crumbs ✨</span>
+        <span class="badge"></span>
 
         <h1>Fresh Cakes,<br>Sweet Memories</h1>
 
