@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Velvet Crumbs | Contact Us</title>
+  
+       <!-- TAILWIND CSS FOR TO LINK TAG : -->
+    <link rel="stylesheet" href="dist/output.css" />
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -293,6 +296,64 @@
       border:none;
       border-radius:18px;
     }
+    /* FOOTER WHOLE CONTAINER INSIDE THE SECTION : */
+.footer-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+
+.footer-logo__content,
+.navigate,
+.popular,
+.contact{
+  text-align: start;
+}
+
+.footer-logo__content p,
+.contact p{
+  margin-top: 15px;
+  line-height: 1.7;
+}
+
+.contact p:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.footer-logo__content p:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.navigate ul,
+.popular ul,.team ul{
+  list-style: none;
+  margin-top: 15px;
+}
+
+.navigate ul li,
+.popular ul li,
+.team ul li
+{
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.navigate ul li:hover{
+  color: white;
+  cursor: pointer;
+}
+.popular ul li:hover{
+  color: white;
+  cursor: pointer;
+}
+.team ul li:hover{
+   color: white;
+   cursor: pointer;
+}
 
     /* RESPONSIVE */
 
@@ -476,6 +537,70 @@
     </div>
 
   </div>
+   <!-- FOOTER CREATION HERE : -->
+
+    <section class="footer-creation">
+      <div class="footer-container">
+        <!-- LEFT SIDE FIRST DIV : -->
+        <div class="footer-logo__content">
+          <h1 id="logo" class="font-bold text-2xl">
+            <a href="#"
+              ><span id="logo-text1" style="color: white">Sweet</span
+              ><span id="logo-text2">Bakes</span></a
+            >
+          </h1>
+          <p>
+            Handcrafted with love in Chennai since<br/> 2014. Every bite tells a
+            story of tradition,<br/> craft and pure ingredients.
+          </p>
+        </div>
+
+        <!-- NAVICATION : -->
+
+        <div class="navigate">
+          <h1>NAVIGATE</h1>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- POPULAR SECTION : -->
+        <div class="popular">
+          <h1>POPULAR</h1>
+          <ul>
+            <li><a href="">Birthday Cakes</a></li>
+            <li><a href="">Croissants</a></li>
+            <li><a href="">Cupcakes</a></li>
+            <li><a href="">Sourdough</a></li>
+          </ul>
+        </div>
+
+        <!-- WEBSITE CREATION ; -->
+
+        <div class="team">
+          <h1>WEBSITE-CREATION(TEAM-GitHub(ID))</h1>
+          <ul>
+            <li><a target="_blank" href="https://github.com/devadharshini062005-ux">Home : devadharshini062005-ux</a></li>
+            <li><a target="_blank" href="https://github.com/subbaiyanarayanan306-cmd/TeamProject">AboutUs : subbaiyanarayanan306-cmd</a></li>
+             <li><a target="_blank" href="https://github.com/chavithran">Product : chavithran</a></li>
+            <li><a target="_blank" href="https://github.com/mohanprasad0512">ContactUs : Mohan Prasad S</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTACT : -->
+
+        <div class="contact">
+          <h1>CONTACT</h1>
+          <p>
+            14 Gandhi Nagar, Adyar +91 98400 12345 hello@sweetbakes.in Mon–Sat:
+            7 AM – 8 PM
+          </p>
+        </div>
+      </div>
+    </section>
 
   <script>
 
