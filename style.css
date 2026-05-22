@@ -44,6 +44,11 @@ body {
   text-align: center;
 }
 
+/* MEDIA QUERY : */
+@media screen and (max-width:768px) {
+          
+}
+
 /* TRANSITION HOVER : */
 ul li a {
   position: relative;
