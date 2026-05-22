@@ -208,7 +208,7 @@ ul li a.active::after {
   font-size: 50px;
   color: #492c1f;
   margin-bottom: 15px;
-  font-family: "Jost", sans-serif;
+  /* font-family: "Jost", sans-serif; */
   text-align: left !important;
 }
 
@@ -576,4 +576,113 @@ ul li a.active::after {
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
     /* gap:20px; */
     gap:10px;
+}
+
+@media screen and (max-width:768px) {
+    .people-section{
+      padding: 70px 5%;
+
+    }
+
+    .poeple-section__title h1{
+      font-size: 35px;
+    }
+
+    .people-section__subtitle p{
+      font-size: 25px;
+    }
+
+    .poeple-section__title p{
+      font-size: 25px;
+    }
+
+    .card-whole__container{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .card1{
+      width: 100%;
+    }
+
+}
+
+/* FOOTER CREATION : */
+.footer-creation{
+  width: 100%;
+  background-color:#2A1810;
+  color: #7C716C;
+  padding: 100px 8%;
+
+}
+
+/* FOOTER WHOLE CONTAINER INSIDE THE SECTION : */
+.footer-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+
+.footer-logo__content,
+.navigate,
+.popular,
+.contact{
+  text-align: start;
+}
+
+.footer-logo__content p,
+.contact p{
+  margin-top: 15px;
+  line-height: 1.7;
+}
+
+.contact p:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.footer-logo__content p:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.navigate ul,
+.popular ul,.team ul{
+  list-style: none;
+  margin-top: 15px;
+}
+
+.navigate ul li,
+.popular ul li,
+.team ul li
+{
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.navigate ul li:hover{
+  color: white;
+  cursor: pointer;
+}
+.popular ul li:hover{
+  color: white;
+  cursor: pointer;
+}
+.team ul li:hover{
+   color: white;
+   cursor: pointer;
+}
+
+/* RESPONSIVE : */
+@media screen and (max-width:768px){
+  
+  .footer-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  align-items: start;
+}
+       
 }
