@@ -143,57 +143,57 @@
     ----------------------------- */
 
     let products = JSON.parse(localStorage.getItem("products")) || [
-      { id: 1, name: "Chocolate Truffle Cake", price: 749, category: "cake", img: "choco-truffle-cake0005choc-pp.webp" },
-      { id: 2, name: "Black Forest Cake", price: 899, category: "cake", img: "Blackforest.jpg" },
-      { id: 3, name: "Red Velvet Cake", price: 799, category: "cake", img: "redvelevt cake.jpg" },
-      { id: 4, name: "Fruit Cake", price: 220, category: "cake", img: "Fruitcake.png" },
+      { id: 1, name: "Chocolate Truffle Cake", price: 749, category: "cake", img: "Images/ChocolateTruffleCake_1800x1800.webp" },
+      { id: 2, name: "Black Forest Cake", price: 899, category: "cake", img: "Images/Blackforest.jpg" },
+      { id: 3, name: "Red Velvet Cake", price: 799, category: "cake", img: "Images/redvelevt cake.jpg" },
+      { id: 4, name: "Fruit Cake", price: 220, category: "cake", img: "Images/FRUITCAKES.jpg" },
 
-      { id: 5, name: "Chocolate Pastry", price: 80, category: "pastry", img: "", onclick: "imgClick(this)" },
-      { id: 6, name: "Strawberry Pastry", price: 75, category: "pastry", img: "https://source.unsplash.com/400x400/?strawberry-pastry" },
-      { id: 7, name: "Black Forest Pastry", price: 70, category: "pastry", img: "https://source.unsplash.com/400x400/?pastry" },
-      { id: 8, name: "Pineapple Pastry", price: 70, category: "pastry", img: "https://source.unsplash.com/400x400/?pineapple-pastry" },
+      { id: 5, name: "Chocolate Pastry", price: 80, category: "pastry", img: "Images/choco pastry.jpg", onclick: "imgClick(this)" },
+      { id: 6, name: "Strawberry Pastry", price: 75, category: "pastry", img: "Images/strawberry pastry.jpeg" },
+      { id: 7, name: "Black Forest Pastry", price: 70, category: "pastry", img: "Images/black forest.jpg" },
+      { id: 8, name: "Pineapple Pastry", price: 70, category: "pastry", img: "Images/pineapple pastry.jpeg" },
 
       // COOKIES
-      { id: 9, name: "Butter Cookies", price: 120, category: "cookies", img: "https://source.unsplash.com/400x400/?cookies" },
-      { id: 10, name: "Chocolate Chip Cookies", price: 140, category: "cookies", img: "https://source.unsplash.com/400x400/?choco-chip" },
-      { id: 11, name: "Oatmeal Cookies", price: 150, category: "cookies", img: "https://source.unsplash.com/400x400/?oatmeal-cookies" },
-      { id: 12, name: "Dry Fruit Cookies", price: 160, category: "cookies", img: "https://source.unsplash.com/400x400/?biscuit" },
+      { id: 9, name: "Butter Cookies", price: 120, category: "cookies", img: "Images/butter cookies.jpeg" },
+      { id: 10, name: "Chocolate Chip Cookies", price: 140, category: "cookies", img: "Images/WhatsApp Image 2026-05-23 at 00.07.24 (1).jpeg" },
+      { id: 11, name: "Oatmeal Cookies", price: 150, category: "cookies", img: "Images/WhatsApp Image 2026-05-23 at 00.07.24.jpeg" },
+      { id: 12, name: "Dry Fruit Cookies", price: 160, category: "cookies", img: "Images/dryfruit cookies.jpeg " },
 
       // BREAD
-      { id: 13, name: "Milk Bread", price: 40, category: "bread", img: "https://source.unsplash.com/400x400/?bread" },
-      { id: 14, name: "Garlic Bread", price: 90, category: "bread", img: "https://source.unsplash.com/400x400/?garlic-bread" },
-      { id: 15, name: "Brown Bread", price: 50, category: "bread", img: "https://source.unsplash.com/400x400/?brown-bread" },
-      { id: 16, name: "Sweet Bun", price: 30, category: "bread", img: "https://source.unsplash.com/400x400/?bun" },
+      { id: 13, name: "Milk Bread", price: 40, category: "bread", img: "Images/milkbread.webp" },
+      { id: 14, name: "Garlic Bread", price: 90, category: "bread", img: "Images/galicabread.webp" },
+      { id: 15, name: "Brown Bread", price: 50, category: "bread", img: "Images/Brownbread.webp" },
+      { id: 16, name: "Sweet Bun", price: 30, category: "bread", img: "Images/solucionindividual-bun-706375_1920.jpg " },
 
       // PIZZA
-      { id: 17, name: "Veg Pizza", price: 180, category: "pizza", img: "https://source.unsplash.com/400x400/?veg-pizza" },
-      { id: 18, name: "Cheese Pizza", price: 200, category: "pizza", img: "https://source.unsplash.com/400x400/?cheese-pizza" },
-      { id: 19, name: "Paneer Pizza", price: 220, category: "pizza", img: "https://source.unsplash.com/400x400/?paneer-pizza" },
-      { id: 20, name: "Corn Pizza", price: 170, category: "pizza", img: "https://source.unsplash.com/400x400/?corn-pizza" },
+      { id: 17, name: "Veg Pizza", price: 180, category: "pizza", img: "Images/160450-italian-food-pizza-ingredientes-wallpaper-1920x1080-1286188.jpg" },
+      { id: 18, name: "Cheese Pizza", price: 200, category: "pizza", img: " Images/268475-cheese-pizza-wallpaper-mobile-free-download-good-pizza-food.jpg" },
+      { id: 19, name: "Paneer Pizza", price: 220, category: "pizza", img: "Images/285951-pizza-wallpaper.jpg" },
+      { id: 20, name: "Corn Pizza", price: 170, category: "pizza", img: " Images/396739-pizza-wallpaper-2560x1600.jpg" },
 
       // BURGER
-      { id: 21, name: "Veg Burger", price: 90, category: "burger", img: "https://source.unsplash.com/400x400/?burger" },
-      { id: 22, name: "Paneer Burger", price: 120, category: "burger", img: "https://source.unsplash.com/400x400/?paneer-burger" },
-      { id: 23, name: "Cheese Burger", price: 110, category: "burger", img: "https://source.unsplash.com/400x400/?cheese-burger" },
-      { id: 24, name: "Spicy Burger", price: 130, category: "burger", img: "https://source.unsplash.com/400x400/?spicy-burger" },
+      { id: 21, name: "Veg Burger", price: 90, category: "burger", img:"Images/VEGBurger.jpg" },
+      { id: 22, name: "spicy Burger", price: 120, category: "burger", img: "Images/Dobulepattburger.jpg" },
+      { id: 23, name: "Cheese Burger", price: 110, category: "burger", img: "Images/CHBurger.jpg" },
+      { id: 24, name: "Combo Burger", price: 130, category: "burger", img:"Images/ComboBurger.jpg" },
 
       // PUFFS
-      { id: 25, name: "Veg Puff", price: 35, category: "puffs", img: "https://source.unsplash.com/400x400/?puff" },
-      { id: 26, name: "Paneer Puff", price: 50, category: "puffs", img: "https://source.unsplash.com/400x400/?paneer-puff" },
-      { id: 27, name: "Egg Puff", price: 40, category: "puffs", img: "https://source.unsplash.com/400x400/?egg-puff" },
-      { id: 28, name: "Chicken Puff", price: 60, category: "puffs", img: "https://source.unsplash.com/400x400/?chicken-puff" },
+      { id: 25, name: "Veg Puff", price: 35, category: "puffs", img: "Images/pexels-amaria-16406502.jpg" },
+      { id: 26, name: "Paneer Puff", price: 50, category: "puffs", img: "Images/panner puffs.jpg " },
+      { id: 27, name: "Egg Puff", price: 40, category: "puffs", img: "Images/eggs-puffs.jpg " },
+      { id: 28, name: "Chicken Puff", price: 60, category: "puffs", img: "Images/chicken puffs.jpg " },
 
       // CHOCOLATE
-      { id: 29, name: "Dark Chocolate", price: 90, category: "chocolate", img: "https://source.unsplash.com/400x400/?dark-chocolate" },
-      { id: 30, name: "Milk Chocolate", price: 85, category: "chocolate", img: "https://source.unsplash.com/400x400/?milk-chocolate" },
-      { id: 31, name: "Hazelnut Chocolate", price: 120, category: "chocolate", img: "https://source.unsplash.com/400x400/?hazelnut-chocolate" },
-      { id: 32, name: "Chocolate Bar", price: 70, category: "chocolate", img: "https://source.unsplash.com/400x400/?chocolate" },
+      { id: 29, name: "Dark Chocolate", price: 90, category: "chocolate", img: "Images/pexels-alleksana-4113333.jpg" },
+      { id: 30, name: "Milk Chocolate", price: 85, category: "chocolate", img: "Images/milk-chocolates.webp" },
+      { id: 31, name: "Hazelnut Chocolate", price: 120, category: "chocolate", img: "Images/pexels-polina-tankilevitch-4110094.jpg" },
+      { id: 32, name: "Chocolate Bar", price: 70, category: "chocolate", img: "Images/chocolte-bar.webp" },
 
       // JUICE
-      { id: 33, name: "Orange Juice", price: 60, category: "juice", img: "https://source.unsplash.com/400x400/?orange-juice" },
-      { id: 34, name: "Apple Juice", price: 55, category: "juice", img: "https://source.unsplash.com/400x400/?apple-juice" },
-      { id: 35, name: "Mango Juice", price: 70, category: "juice", img: "https://source.unsplash.com/400x400/?mango-juice" },
-      { id: 36, name: "Pineapple Juice", price: 60, category: "juice", img: "https://source.unsplash.com/400x400/?pineapple-juice" },
+      { id: 33, name: "Orange Juice", price: 60, category: "juice", img: "Images/orange juice.jpg" },
+      { id: 34, name: "Apple Juice", price: 55, category: "juice", img: "Images/front-view-fresh-apple-juice-with-fresh-apples-dark-drink-photo-color-cocktail-fruit.jpg" },
+      { id: 35, name: "Mango Juice", price: 70, category: "juice", img: "Images/mango juice.jpg" },
+      { id: 36, name: "Pineapple Juice", price: 60, category: "juice", img: "Images/pineapple-juice-with-pieces-raw-pineapple.jpg" },
 
     ];
 
@@ -232,9 +232,9 @@
               <p class="text-gray-600">Fresh & delicious…</p>
 
               <div class="flex justify-between items-center mt-5">
-                <p class="text-brown-700 text-lg font-bold">₹${p.price}</p>
+                <p class="text-red-700 text-lg font-bold">₹${p.price}</p>
                 <button onclick="addToCart(${p.id})"
-                        class="bg-brown-600 text-white px-4 py-2 rounded-full">+ Add</button>
+                     class="bg-red-600 text-white px-4 py-2 rounded-full">+ Add</button>
               </div>
             </div>
           `;
