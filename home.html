@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SweetBakes</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="body">
+    <!--nav bar-->
+    <nav id="navbar">
+      <h1><span id="logo-text1" style="color: rgb(84, 38, 4)">Sweet</span>
+        <span id="logo-text2" style="color: chocolate">Bakes</span>
+      </h1>
+      <ul id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div id="menu">
+  ☰
+</div>
+    </nav>
+    <div id="mobile-nav">
+
+  <div id="close-btn">✕</div>
+
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Product</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+</div>
+
+    <div class="hero">
+      <!-- Progress bar -->
+      <div class="progress-bar" id="progressBar"></div>
+
+      <!-- Arrow buttons -->
+      <button class="arrow arrow-left" onclick="changeSlide(-1)">&#8592;</button>
+      <button class="arrow arrow-right" onclick="changeSlide(1)">&#8594;</button>
+
+      <!-- ── SLIDE 1: Red Velvet ── -->
+      <section class="hero-slide active" id="hero-one">
+        <h1>Red <span>Velvet</span></h1>
+        <img class="hero-img" src="img/cake.png" width="420" height="380" alt="Red Velvet Cake" />
+        <p class="hero-price">
+          Rich cocoa, soft velvet layers & creamy frosting — crafted to make every moment sweeter.
+          <button class="price-btn">Order Now!</button>
+        </p>
+        <p class="hero-explore">
+          Discover our freshly baked cakes, crafted with love for every celebration.
+          <button class="explore-btn">Explore More!</button>
+        </p>
+      </section>
+
+      <!-- ── SLIDE 2: Blueberry Cheesecake ── -->
+      <section class="hero-slide" id="hero-two">
+        <h1>BlueBerry <span>Cheesecake</span></h1>
+        <img class="hero-img" src="img/blue.png" width="380" height="380" alt="Blueberry Cheesecake" />
+        <p class="hero-price">
+          Tangy blueberries meet silky smooth cream cheese on a buttery graham cracker base.
+          <button class="price-btn">Order Now!</button>
+        </p>
+        <p class="hero-explore">
+          Discover our freshly baked cakes, crafted with love for every celebration.
+          <button class="explore-btn">Explore More!</button>
+        </p>
+      </section>
+
+      <!-- ── SLIDE 3: Garlic Bread ── -->
+      <section class="hero-slide" id="hero-three">
+        <h1>Garlic <span>Bread</span></h1>
+        <img class="hero-img" src="img/garlic.png" width="360" height="380" alt="Garlic Bread"
+          style="padding:20px" />
+        <p class="hero-price">
+          Golden crust, buttery garlic aroma — the perfect companion for every meal.
+          <button class="price-btn">Order Now!</button>
+        </p>
+        <p class="hero-explore">
+          Discover our freshly baked cakes, crafted with love for every celebration.
+          <button class="explore-btn">Explore More!</button>
+        </p>
+      </section>
+
+      <!-- Dot indicators -->
+      <div class="dots">
+        <button class="dot active" onclick="goToSlide(0)"></button>
+        <button class="dot" onclick="goToSlide(1)"></button>
+        <button class="dot" onclick="goToSlide(2)"></button>
+      </div>
+
+    </div>
+
+    <div class="ad">
+      <span id="span-ad">🎉 Limited Time Offer — Get 20% OFF on all cheesecakes! Freshly baked with love and delivered
+        with sweetness. </span>
+      <button id="btn-ad">X</button>
+
+    </div>
+    <br>
+    <br>
+    <!--Product section-->
+
+    <!--product head-->
+  <div class=head>
+    <p>--This Week</p>
+    <h1>Today's Highlights</h1>
+  </div> 
+<div class="cards-wrapper">
+  <!-- CARD 1 -->
+  <div class="product-card category-cake">
+    <span class="card-badge badge-cake">CAKE</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png"
+         class="card-img" alt="Strawberry Dream Cake"/>
+    <h3 class="card-name">Strawberry Dream Cake</h3>
+    <p class="card-desc">Soft vanilla sponge filled with strawberry cream…</p>
+    <div class="card-footer">
+      <p class="card-price">₹749</p>
+      <button class="card-btn">+ Add</button>
+    </div>
+  </div>
+ 
+  <!-- CARD 2 -->
+  <div class="product-card category-cake">
+    <span class="card-badge badge-cake">CAKE</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/415/415733.png"
+         class="card-img" alt="Rose & Lychee Cake"/>
+    <h3 class="card-name">Rose & Lychee Cake</h3>
+    <p class="card-desc">Rose-infused chiffon with lychee cream…</p>
+    <div class="card-footer">
+      <p class="card-price">₹899</p>
+      <button class="card-btn">+ Add</button>
+    </div>
+  </div>
+ 
+  <!-- CARD 3 -->
+  <div class="product-card category-cake">
+    <span class="card-badge badge-cake">CAKE</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/590/590685.png"
+         class="card-img" alt="Matcha Opera Cake"/>
+    <h3 class="card-name">Matcha Opera Cake</h3>
+    <p class="card-desc">Matcha sponge layered with rich cream…</p>
+    <div class="card-footer">
+      <p class="card-price">₹799</p>
+      <button class="card-btn">+ Add</button>
+    </div>
+  </div>
+ 
+  <!-- CARD 4 -->
+  <div class="product-card category-pastry">
+    <span class="card-badge badge-pastry">PASTRY</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/3430/3430055.png"
+         class="card-img" alt="Salted Caramel Tart"/>
+    <h3 class="card-name">Salted Caramel Tart</h3>
+    <p class="card-desc">Crisp tart shell filled with caramel cream…</p>
+    <div class="card-footer">
+      <p class="card-price">₹220</p>
+      <button  class="card-btn">+ Add</button>
+    </div>
+  </div>
+ 
+</div>
+    <!--About-->
+    <div id="card-container">
+
+      <!-- 1st card -->
+      <div class="card">
+        <div class="icon">
+          <h2>🌿</h2>
+        </div>
+        <h3>Natural Ingredients</h3>
+        <p>
+          No artificial colours, flavours or preservatives. Real butter,
+          real cream, real fruit — always.
+        </p>
+      </div>
+
+      <!-- 2nd card -->
+      <div class="card">
+        <div class="icon">
+          <h2>🕐</h2>
+        </div>
+        <h3>Always Fresh</h3>
+        <p>
+          We bake small batches every morning. Nothing sits overnight.
+          If it's not fresh, it doesn't go out.
+        </p>
+      </div>
+
+      <!-- 3rd card -->
+      <div class="card">
+        <div class="icon">
+          <h2>👩‍🍳</h2>
+        </div>
+        <h3>Master Craft</h3>
+        <p>
+          No artificial colours, flavours or preservatives. Real butter,
+          real cream, real fruit — always.
+        </p>
+      </div>
+
+      <!-- 4th card -->
+      <div class="card">
+        <div class="icon">
+          <h2>🌎</h2>
+        </div>
+        <h3>Community First</h3>
+        <p>
+          We source locally, compost waste, and donate leftover bakes
+          to neighbourhood shelters every evening.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="review">
+      <div class="review-wrap" id="review-wrap"></div>
+    </div>
+
+    <div class="number">
+      <h4>---Numbers</h4>
+      <h1>SweetBakes by the numbers</h1>
+
+      <div class="number-cards">
+        <div class="square">
+          <h2 class="count" data-target="10">0</h2>
+          <h6>Years Baking</h6>
+        </div>
+
+        <div class="square">
+          <h2 class="count" data-target="50000">0</h2>
+          <h6>Happy Customers</h6>
+        </div>
+
+        <div class="square">
+          <h2 class="count" data-target="120">0</h2>
+          <h6>Menu Items</h6>
+        </div>
+
+        <div class="square">
+          <h2 class="count percent" data-target="98">0</h2>
+          <h6>Natural</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <section class="footer-creation">
+      <div class="footer">
+        <div class="footer-logo__content"></div>
+        <div class="navigate"></div>
+        <div class="popular"></div>
+        <div class="team"></div>
+        <div class="contact"></div>
+      </div>
+    </section>
+
+
+  </div>
+  <script src="home.js"></script>
+</body>
+
+</html>
