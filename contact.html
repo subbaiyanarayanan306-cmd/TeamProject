@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Velvet Crumbs | Contact Us</title>
+  <title>Sweet Bakes | Contact Us</title>
   
-       <!-- TAILWIND CSS FOR TO LINK TAG : -->
-    <link rel="stylesheet" href="dist/output.css" />
-
+        
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- TAILWIND CSS FOR TO LINK TAG : -->
+    <link rel="stylesheet" href="dist/output.css" />
 
   <style>
 
@@ -101,6 +101,7 @@
 
     .contact-info{
       animation:slideLeft 1s ease;
+      padding-top: 50px;
     }
 
     .badge{
@@ -216,6 +217,8 @@
       text-align:center;
       color:var(--brown);
       margin-bottom:25px;
+      font-size: large;
+      
     }
 
     .input-group{
@@ -288,6 +291,7 @@
       text-align:center;
       margin-bottom:20px;
       color:var(--brown);
+      font-size: large;
     }
 
     iframe{
@@ -296,64 +300,7 @@
       border:none;
       border-radius:18px;
     }
-    /* FOOTER WHOLE CONTAINER INSIDE THE SECTION : */
-.footer-container{
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr 1fr;
-  gap: 40px;
-  align-items: start;
-}
-
-
-.footer-logo__content,
-.navigate,
-.popular,
-.contact{
-  text-align: start;
-}
-
-.footer-logo__content p,
-.contact p{
-  margin-top: 15px;
-  line-height: 1.7;
-}
-
-.contact p:hover{
-  color: white;
-  cursor: pointer;
-}
-
-.footer-logo__content p:hover{
-  color: white;
-  cursor: pointer;
-}
-
-.navigate ul,
-.popular ul,.team ul{
-  list-style: none;
-  margin-top: 15px;
-}
-
-.navigate ul li,
-.popular ul li,
-.team ul li
-{
-  margin-bottom: 10px;
-  padding: 0;
-}
-
-.navigate ul li:hover{
-  color: white;
-  cursor: pointer;
-}
-.popular ul li:hover{
-  color: white;
-  cursor: pointer;
-}
-.team ul li:hover{
-   color: white;
-   cursor: pointer;
-}
+     
 #navbar {
   display: flex;
   flex-wrap: wrap;
@@ -462,6 +409,82 @@
       }
 
     }
+    /* FOOTER WHOLE CONTAINER INSIDE THE SECTION : */
+.footer-container{
+  display: grid;
+  background-color: #2A1810;
+  color: #79716C;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 100px;
+}
+
+
+.footer-logo__content,
+.navigate,
+.popular,
+.contact{
+  text-align: start;
+}
+
+.footer-logo__content p,
+.contact p{
+  margin-top: 15px;
+  line-height: 1.7;
+}
+
+.contact p:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.footer-logo__content p:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.navigate ul,
+.popular ul,.team ul{
+  list-style: none;
+  margin-top: 15px;
+}
+
+.navigate ul li,
+.popular ul li,
+.team ul li
+{
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.navigate ul li:hover{
+  color: white;
+  cursor: pointer;
+}
+.popular ul li:hover{
+  color: white;
+  cursor: pointer;
+}
+.team ul li:hover{
+   color: white;
+   cursor: pointer;
+}
+#logo-text2{
+  color: #e56b1f;
+}
+
+/* RESPONSIVE : */
+@media screen and (max-width:768px){
+  
+  .footer-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  align-items: start;
+}
+       
+}
 
   </style>
 </head>
@@ -515,12 +538,12 @@
 
       <div class="contact-info">
 
-        <span class="badge"></span>
+        <span class="badge">Sweet Bakes ⁀જ➣</span>
 
-        <h1>Fresh Cakes,<br>Sweet Memories</h1>
+        <h1>Fresh Cakes<br>Sweet Memories</h1>
 
         <p>
-          Contact Velvet Crumbs for delicious cakes, pastries,
+          Contact Sweet Bakes for delicious cakes, pastries,
           birthday cakes, wedding orders and bakery support.
           We bake happiness every day with fresh ingredients
           and love.
@@ -531,7 +554,7 @@
 
           <div class="info-text">
             <h3>Call Us</h3>
-            <p>+91 98765 43210</p>
+            <p>+91 90422 93045</p>
           </div>
         </div>
 
@@ -540,7 +563,7 @@
 
           <div class="info-text">
             <h3>Email</h3>
-            <p>hello@velvetcrumbs.com</p>
+            <p>hello@sweetbakes.com</p>
           </div>
         </div>
 
@@ -582,7 +605,7 @@
 
       <div class="contact-form">
 
-        <h2>Contact Velvet Crumbs</h2>
+        <h2>Contact Sweet Bakes</h2>
 
         <form id="contactForm">
 
@@ -618,7 +641,7 @@
           </div>
 
           <button class="btn" type="submit">
-            Send Sweet Message 🍰
+            Send Sweet Message 🎂
           </button>
 
         </form>
@@ -631,7 +654,7 @@
 
     <div class="map-section">
 
-      <h2>Visit Our Bakery 📍</h2>
+      <h2>Visit Our Bakery 🌍</h2>
 
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.412181077573!2d77.59456657485767!3d12.971598987343709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670f9f6d9d9%3A0x53d8f6b5c2f2d6b5!2sBakery!5e0!3m2!1sen!2sin!4v1710000000000"
@@ -706,6 +729,7 @@
         </div>
       </div>
     </section>
+    
 
   <script>
 
@@ -719,7 +743,7 @@
 
       const button = document.querySelector(".btn");
 
-      button.innerHTML = "Message Sent 💖";
+      button.innerHTML = "Message Sent ⌯⌲";
       button.style.opacity = "0.8";
 
        
