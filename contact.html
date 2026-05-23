@@ -378,6 +378,29 @@
   text-align:right;
 }
 
+@media screen and (max-width:768px){
+    #navbar{
+    padding:10px 15px;
+  }
+
+  #navbar h1{
+    font-size:22px;
+  }
+
+  #menu{
+    font-size:25px;
+  }
+
+
+  #navbar ul{
+    display:none;
+  }
+
+  #menu{
+    display:block;
+  }
+
+}
 
     /* RESPONSIVE */
 
@@ -748,6 +771,26 @@
 
        
     });
+    var navlinks=document.querySelectorAll("ul li a");
+ navlinks.forEach((links)=>{
+    links.addEventListener("click",()=>{
+       navlinks.forEach((item)=>{
+         item.classList.remove("active")
+       });
+        links.classList.add("active")
+    });
+   
+ })
+
+let menu = document.getElementById("menu")
+let mobilenav = document.getElementById("mobile-nav")
+let closebtn = document.getElementById("close-btn")
+
+menu.addEventListener("click",function(){
+
+    mobilenav.style.left = "0"
+
+})
 
   </script>
 
