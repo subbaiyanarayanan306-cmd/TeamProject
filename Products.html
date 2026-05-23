@@ -23,7 +23,10 @@
 body {
   background-color: #faf6f1;
 }
-
+/* Cart Drawer */
+    #cartDrawer {
+      transition: right 0.35s ease-in-out;
+    }
 ul li a {
   position: relative;
   text-decoration: none;
@@ -161,26 +164,19 @@ ul li a.active::after {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
     }
 
-    /* Cart Drawer */g
-    #cartDrawer {
-      transition: right 0.35s ease-in-out;
-    }
-    .footer-creation{
-  width: 100%;
-  background-color:#2A1810;
-  color: #7C716C;
-  padding: 100px 8%;
-
-}
-
-/* FOOTER WHOLE CONTAINER INSIDE THE SECTION : */
+    
+  
 .footer-container{
   display: grid;
+  background-color: #2A1810;
+  padding: 100px;
   grid-template-columns: 2fr 1fr 1fr 1.5fr 1fr;
   gap: 40px;
   align-items: start;
-}
+  color: #79716C;
 
+  
+}
 
 .footer-logo__content,
 .navigate,
@@ -191,8 +187,8 @@ ul li a.active::after {
 
 .footer-logo__content p,
 .contact p{
-  margin-top: 15px;
-  line-height: 1.7;
+  margin-top: 30px;
+  line-height: 2.5;
 }
 
 .contact p:hover{
@@ -208,7 +204,7 @@ ul li a.active::after {
 .navigate ul,
 .popular ul,.team ul{
   list-style: none;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .navigate ul li,
@@ -231,7 +227,9 @@ ul li a.active::after {
    color: white;
    cursor: pointer;
 }
-
+#logo-text2{
+  color: #e56b1f;
+}
 /* RESPONSIVE : */
 @media screen and (max-width:768px){
   
@@ -240,9 +238,11 @@ ul li a.active::after {
   grid-template-columns: 1fr;
   gap: 25px;
   align-items: start;
+  padding: 30px;
 }
        
 }
+       
     
   </style>
 </head>
@@ -253,8 +253,8 @@ ul li a.active::after {
  <div class="body">
     <!--nav bar-->
     <nav id="navbar">
-      <h1><span id="logo-text1" style="color: rgb(84, 38, 4)">Sweet</span>
-        <span id="logo-text2" style="color: chocolate">Bakes</span>
+      <h1><span id="logo-text1" style="color: rgb(245, 237, 232,236)">Sweet</span>
+        <span id="logo-text2">Bakes</span>
       </h1>
       <ul id="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -280,9 +280,9 @@ ul li a.active::after {
 </div>
   <!-- HERO -->
   <section class="px-12 md:px-12 py-12">
-    <p class="uppercase tracking-widest text-brown-500 mt-4">Our Menu</p>
+    
 
-    <h2 class="text-5xl md:text-5xl font-bold mt-2">
+    <h2 class="text-5xl md:text-5xl font-bold mt-5">
       Everything We Bake
     </h2>
   </section>
@@ -308,6 +308,9 @@ ul li a.active::after {
     <button onclick="setCategory('puffs')" class="cat-btn bg-white border px-5 py-2 rounded-full">🥖 Puffs</button>
     <button onclick="setCategory('chocolate')" class="cat-btn bg-white border px-5 py-2 rounded-full">🍫 Chocolate</button>
     <button onclick="setCategory('juice')" class="cat-btn bg-white border px-5 py-2 rounded-full">🥤 Juices</button>
+    <button onclick="openCart()" class="bg-red-600 text-white px-4 py-2 rounded-full">
+      🛒 Cart <span id="cartCount">0</span>
+    </button>
   </div>
 
   <!-- PRODUCT GRID -->
@@ -316,6 +319,7 @@ ul li a.active::after {
   </section>
 
   <!-- CART DRAWER -->
+   
   <div id="cartDrawer"
     class="fixed top-0 right-[-400px] h-full w-80 bg-white shadow-xl p-5 overflow-y-auto z-50">
 
@@ -331,6 +335,7 @@ ul li a.active::after {
     </div>
   </div>
 
+
   <!-- ADMIN PANEL: OPEN BY typing #admin IN URL -->
   <div id="adminPanel" class="hidden p-6">
 
@@ -339,7 +344,7 @@ ul li a.active::after {
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
       <!-- ADD PRODUCT -->
-      <div class="bg-white p-5 rounded-xl shadow">
+      <div class="bg-red-600 p-5 rounded-xl shadow">
         <h3 class="text-xl font-bold mb-3">Add New Product</h3>
 
         <input id="aName" class="block w-full p-3 border rounded mb-2" placeholder="Product Name" />
@@ -613,7 +618,25 @@ ul li a.active::after {
     
 
   </script>
-<div class="navigate">
+<section class="footer-creation">
+      <div class="footer-container">
+        <!-- LEFT SIDE FIRST DIV : -->
+        <div class="footer-logo__content">
+          <h1 id="logo" class="font-bold text-2xl">
+            <a href="#"
+              ><span id="logo-text1" style="color: white">Sweet</span
+              ><span id="logo-text2">Bakes</span></a
+            >
+          </h1>
+          <p>
+            Handcrafted with love in Chennai since<br/> 2014. Every bite tells a
+            story of tradition,<br/> craft and pure ingredients.
+          </p>
+        </div>
+
+        <!-- NAVICATION : -->
+
+        <div class="navigate">
           <h1>NAVIGATE</h1>
           <ul>
             <li><a href="">Home</a></li>

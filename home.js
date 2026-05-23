@@ -210,10 +210,8 @@ counts.forEach((count) => {
 let f1 = document.querySelector(".footer-logo__content")
 f1.innerHTML = `
           <h1 id="logo" >
-            <a href="#"
-              ><span id="logo-text1" style="color: white">Sweet</span
-              ><span id="logo-text2" style="color: chocolate">Bakes</span></a
-            >
+            <span id="logo-text1" style="color: white">Sweet</span
+              ><span id="logo-text2" style="color: chocolate">Bakes</span>
           </h1>
           <p>
             Handcrafted with love in Chennai since<br/> 2014. Every bite tells a

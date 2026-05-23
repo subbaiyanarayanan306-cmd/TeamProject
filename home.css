@@ -739,6 +739,7 @@ ul li a.active::after {
   grid-template-columns: 2fr 1fr 1fr 1.5fr 1fr;
   gap: 40px;
   align-items: start;
+  padding:100px;
 }
 
 
